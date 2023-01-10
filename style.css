@@ -1,0 +1,256 @@
+body{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image:url("./photos/pikrepo.jpg");
+}
+
+#container{
+    height: 75%;
+    width: 75%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border: 3px solid black;
+    border-radius: 5px;
+    
+}
+
+.choice{
+    height:30% ;
+    width: 100%;
+    display: flex;
+}
+
+.show{
+    height: 40%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    border: 3px solid black;
+
+}
+
+.result{
+    height: 30%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+#playerChoice{
+    height: 100%;
+    width: 50%;
+    background-color: #16ab6d;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+#playerChoice h2{
+    height: 20%;
+    width: 100%;
+    letter-spacing: 3px;
+}
+
+#playerChoice #player{
+    height: 80%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: xxx-large;
+    font-weight: 800;
+    letter-spacing: 2px;
+}
+
+#comChoice{
+    height: 100%;
+    width: 50%;
+    background-color: aquamarine;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+}
+
+#comChoice h2{
+    height: 20%;
+    width: 100%;
+    letter-spacing: 3px;
+}
+#comChoice #computer{
+    height: 80%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: xxx-large;
+    font-weight: 800;
+    letter-spacing: 2px;
+}
+
+.again{
+    height: 100%;
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#result{
+    height: 100%;
+    width: 80%;
+    background-color: coral;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#gResult{
+    font-size: xxx-large;
+    font-weight: 800;
+    letter-spacing: 2px;
+}
+
+.rock{
+    height: 100%;
+    width: 33%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.paper{
+    height: 100%;
+    width: 33%;
+    background-color:cadetblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.scissors{
+    height: 100%;
+    width: 34%;
+    background-color:rgb(208, 0, 255);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.choice button{
+    height: 100%;
+    width: 100%;
+    border: none;
+}
+
+.again button{
+    height: 100%;
+    width: 100%;
+    background: none;
+    cursor: pointer;
+    transition: background-color 0.5s;
+    font-size: xxx-large;
+    font-weight: 800;
+    border: none;
+}
+
+.again button:hover{
+    background-color: rgb(7, 16, 118);
+    color: aliceblue;
+}
+#rock{
+    background-color: #ffe84a;
+    cursor: pointer;
+    transition: background-color 0.5s;
+}
+
+#rock img{
+    height: 100%;
+    width: 50%;
+}
+
+#paper{
+    background-color: #00e1d4;
+    cursor: pointer;
+    transition: background-color 0.5s;
+}
+
+#paper img{
+    height: 100%;
+    width: 50%;
+}
+
+#scissors{
+ background-color: #f1baf5;
+ cursor: pointer;
+ transition: background-color 0.5s;
+}
+
+#scissors img{
+    height: 100%;
+    width: 50%;
+}
+
+#rock:hover{
+    background-color: #dec316;
+}
+
+#paper:hover{
+    background-color: #1fb0a9;
+}
+
+#scissors:hover{
+    background-color: #d42fdf
+}
+
+@media(max-width: 1000px){
+    #again{
+        font-size: 30px;
+    }
+}
+
+@media(max-width: 500px){
+    #again{
+        font-size: 20px;
+    }
+    #rock img{
+        height: 70%;
+        width: 60%;
+    }
+
+    #paper img{
+        height: 70%;
+        width: 60%;
+    }
+
+    #scissors img{
+        height: 70%;
+        width: 60%;
+    }
+    #playerChoice{
+        font-size: 10px;
+    }
+
+    #playerChoice #player{
+        font-size: 20px;
+    }
+
+    #comChoice{
+        font-size: 10px;
+    }
+    #comChoice #computer{
+        font-size: 20px;
+    }
+
+    #gResult{
+        font-size: 20px;
+    }
+
+}
